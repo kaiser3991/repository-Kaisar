@@ -1,0 +1,45 @@
+@import url('fonts.css');
+@import url('adaptive.css');
+body{
+    font-family: "Inter-Regular";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+}
+.logo{
+   font-size: 32px;
+   font-family: "Inter-Extra-bold";
+}
+.logo span{
+    color: #2283f5;
+}
+.menu{display: flex;}
+.menu ul{
+    display: flex;
+}
+.menu li{
+    margin: 15px;
+
+}
+.menu img{
+    display: none;
+}
