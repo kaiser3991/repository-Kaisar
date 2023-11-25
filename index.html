@@ -15,19 +15,22 @@
         </div>
 
         <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="burger">
+                <li onclick="closeMenu()"><a href="#">Home</a></li>
+                <li onclick="closeMenu()" ><a href="#">Services</a></li>
+                <li onclick="closeMenu()"><a href="#">About</a></li>
+                <li onclick="closeMenu()"><a href="#">Contact</a></li>
             </ul>
-            <img src="./img/burger.svg" alt="burger menu">
+            <img src="./img/burger.svg" onclick="openMenu()" alt="burger menu">
+            <img id="closex" class="close" src="./img/close.svg"  onclick="closeMenu()">
         </div>
+
         
 
        </div>
        <div></div>
        <div></div>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>

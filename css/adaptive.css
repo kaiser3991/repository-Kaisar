@@ -5,4 +5,32 @@
     .menu img{
         display: block;
     }
+    img.close{
+        display: none;
+    }
+    img.close.active{
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 100;
+    }
+    ul.active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 32px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 90;
+
+    }
+    ul.active li{
+        margin: 30px 15px;
+    }
 }
