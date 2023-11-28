@@ -6,14 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/adaptive.css">
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./lib/slick/slick-theme.css"/>
 </head>
 <body>
     <div class="container">
        <div class="navigation">
         <div class="logo">
             <a href="#">Clean<span>Sweep</span></a>
-        </div>
 
+        </div>
+        
         <div class="menu">
             <ul id="burger">
                 <li onclick="closeMenu()"><a href="#">Home</a></li>
@@ -25,12 +28,34 @@
             <img id="closex" class="close" src="./img/close.svg"  onclick="closeMenu()">
         </div>
 
+
         
 
        </div>
-       <div></div>
-       <div></div>
+       <div class="fade">
+        <div>
+            <img src="./img/slide1.jpg" alt="">
+        </div>
+        <div><img src="./img/slide2.jpg" alt=""></div>
+        <div><img src="./img/slide3.jpg" alt=""></div>
+      </div>
     </div>
     <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./lib/slick/slick.min.js">
+</script>
+<script>
+    $('.fade').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: false,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  arrows: false,
+});
+</script>
 </body>
 </html>
